@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zero-Waste Living: A Beginner’s Guide</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --eco-green: #4CAF50;
+            --earth-brown: #8D6E63;
+            --light-beige: #F5F5F1;
+            --soft-teal: #80CBC4;
+            --dark-green: #2E7D32;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-beige);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--dark-green);
+        }
+        
+        .bg-zero-waste-hero {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(46, 125, 50, 0.8)), 
+                        url('img/zero-waste-hero.jpg') center/cover;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .zero-badge {
+            background-color: var(--eco-green);
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        
+        .tip-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--eco-green);
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .zero-icon {
+            color: var(--eco-green);
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+        
+        .btn-zero-action {
+            background-color: var(--eco-green);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .btn-zero-action:hover {
+            background-color: var(--dark-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .step-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .zero-fact {
+            background-color: var(--soft-teal);
+            border-left: 4px solid var(--eco-green);
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .swap-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .swap-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .progress-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            background-color: var(--eco-green);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Waste: The Silent Threat</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<section id="top" class="bg_green pt-2 pb-2">
+<div class="container-xl">
+ <div class="row top_1">
+  <div class="col-md-8">
+   <div class="top_1l">
+    <ul class="mb-0">
+		<li class="text-white d-inline-block">Welcome to Plastic Recycling Facts</li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">How to Find Us</a> </li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">Give Feedback</a> </li>
+	</ul>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="top_1r text-end">
+      <div class="input-group">
+				<input type="text" class="form-control border-0 bg-transparent text-white" placeholder="Search Keyword">
+				<span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent rounded-0 p-1 px-3 border-0" type="button">
+						<i class="fa fa-search"></i> </button>
+				</span>
+		</div>
+   </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="header">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Plastic Truth</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	   <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+		 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+		
+		<li class="nav-item">
+          <a class="nav-link" href="projects.html">Services </a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html"> Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html"> Team Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html"> Contact Us</a></li>
+          </ul>
+        </li>
+		
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link mx-2" href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+
+<!-- Hero Section -->
+<section class="py-5 bg-zero-waste-hero text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <span class="zero-badge mb-3">Sustainable Living</span>
+                <h1 class="display-4 mb-4">Zero-Waste Living: A Beginner’s Guide</h1>
+                <p class="lead mb-4">Discover how small changes in your daily routine can significantly reduce waste and benefit the planet.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#steps" class="btn btn-zero-action">Get Started</a>
+                    <a href="#video" class="btn btn-outline-light">Watch Intro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <p class="lead">The zero-waste movement isn't about perfection—it's about making better choices to minimize our environmental impact. This guide will walk you through simple, practical steps to reduce waste in your everyday life.</p>
+                    
+                    <div class="zero-fact">
+                        <h4><i class="fa fa-lightbulb-o zero-icon"></i>Did You Know?</h4>
+                        <p>The average person generates <strong>4.4 pounds</strong> of trash per day. By adopting zero-waste habits, you could reduce that by 80% or more!</p>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">The 5 R's of Zero Waste</h2>
+                    <p>These core principles form the foundation of zero-waste living:</p>
+                    
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <div class="tip-card text-center">
+                                <i class="fa fa-ban zero-icon fa-2x mb-3"></i>
+                                <h4>Refuse</h4>
+                                <p>Say no to unnecessary items like single-use plastics and junk mail</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tip-card text-center">
+                                <i class="fa fa-redo zero-icon fa-2x mb-3"></i>
+                                <h4>Reduce</h4>
+                                <p>Cut down on what you consume and buy only what you need</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tip-card text-center">
+                                <i class="fa fa-recycle zero-icon fa-2x mb-3"></i>
+                                <h4>Reuse</h4>
+                                <p>Choose reusable items over disposables</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tip-card text-center mt-3">
+                                <i class="fa fa-compost zero-icon fa-2x mb-3"></i>
+                                <h4>Rot</h4>
+                                <p>Compost food scraps and yard waste</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tip-card text-center mt-3">
+                                <i class="fa fa-recycle zero-icon fa-2x mb-3"></i>
+                                <h4>Recycle</h4>
+                                <p>Properly recycle what you can't refuse, reduce, or reuse</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center my-5">
+                        <img src="img/zero-waste-kitchen.jpg" alt="Zero waste kitchen" class="img-fluid rounded shadow">
+                        <p class="text-muted mt-2">A zero-waste kitchen with reusable containers and bulk foods</p>
+                    </div>
+                    
+                    <h2 id="steps" class="mt-5 mb-4">Getting Started: Room by Room</h2>
+                    <div class="step-section">
+                        <h3><i class="fa fa-shopping-bag zero-icon"></i>Kitchen</h3>
+                        <p>The kitchen is often the easiest place to start reducing waste:</p>
+                        <ul>
+                            <li>Use cloth produce bags and bulk containers</li>
+                            <li>Switch to reusable beeswax wraps instead of plastic wrap</li>
+                            <li>Compost food scraps</li>
+                            <li>Buy in bulk to reduce packaging</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-section">
+                        <h3><i class="fa fa-bath zero-icon"></i>Bathroom</h3>
+                        <p>Personal care products generate significant plastic waste:</p>
+                        <ul>
+                            <li>Use bar soap and shampoo bars</li>
+                            <li>Switch to a bamboo toothbrush</li>
+                            <li>Try reusable safety razors</li>
+                            <li>Make your own cleaning products</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="step-section">
+                        <h3><i class="fa fa-shopping-cart zero-icon"></i>Shopping</h3>
+                        <p>Smart shopping habits reduce waste before it starts:</p>
+                        <ul>
+                            <li>Bring your own bags, jars, and containers</li>
+                            <li>Shop at farmers markets and bulk stores</li>
+                            <li>Choose products with minimal or compostable packaging</li>
+                            <li>Buy quality items that last longer</li>
+                        </ul>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">Easy Zero-Waste Swaps</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="swap-card">
+                                <img src="img/plastic-bottle-swap.jpg" class="img-fluid w-100" alt="Plastic bottle swap">
+                                <div class="p-4">
+                                    <h4>Plastic Water Bottles</h4>
+                                    <p>→ Stainless steel or glass bottles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="swap-card">
+                                <img src="img/paper-towel-swap.jpg" class="img-fluid w-100" alt="Paper towel swap">
+                                <div class="p-4">
+                                    <h4>Paper Towels</h4>
+                                    <p>→ Reusable cloth towels</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="swap-card">
+                                <img src="img/plastic-straw-swap.jpg" class="img-fluid w-100" alt="Plastic straw swap">
+                                <div class="p-4">
+                                    <h4>Plastic Straws</h4>
+                                    <p>→ Stainless steel, bamboo, or silicone straws</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="swap-card">
+                                <img src="img/plastic-bag-swap.jpg" class="img-fluid w-100" alt="Plastic bag swap">
+                                <div class="p-4">
+                                    <h4>Plastic Bags</h4>
+                                    <p>→ Reusable cloth shopping bags</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">30-Day Zero-Waste Challenge</h2>
+                    <p>Try these simple steps to gradually reduce waste:</p>
+                    
+                    <div class="progress-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Week 1: Awareness</h4>
+                            <p>Carry a small bag to collect your trash for the week. This helps you identify your main waste sources.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>Week 2: Refuse & Reduce</h4>
+                            <p>Start refusing single-use items and reduce unnecessary purchases.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>Week 3: Reusable Alternatives</h4>
+                            <p>Implement 3-5 reusable alternatives in your daily routine.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4>Week 4: Systems & Habits</h4>
+                            <p>Set up systems like composting and establish new waste-reducing habits.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="video" class="embed-responsive embed-responsive-16by9 my-5">
+                        <iframe class="embed-responsive-item rounded shadow" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="zero-fact bg-light">
+                        <h4><i class="fa fa-question-circle zero-icon"></i>Common Challenges</h4>
+                        <p><strong>Too expensive?</strong> Start small—many swaps save money long-term.<br>
+                        <strong>No bulk stores nearby?</strong> Focus on reducing packaging at regular stores.<br>
+                        <strong>Family resistant?</strong> Lead by example and make changes gradually.</p>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="#" class="btn btn-zero-action btn-lg">Download Your Zero-Waste Checklist</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Quick Start Tips</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-check me-3" style="color: var(--eco-green);"></i>
+                            <span>Carry a reusable water bottle</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-check me-3" style="color: var(--eco-green);"></i>
+                            <span>Bring your own shopping bags</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-check me-3" style="color: var(--eco-green);"></i>
+                            <span>Say no to plastic straws</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-check me-3" style="color: var(--eco-green);"></i>
+                            <span>Start a compost bin</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Track Your Progress</h4>
+                    <p>Use this simple tracker to monitor your waste reduction:</p>
+                    <div class="mb-3">
+                        <label class="form-label">Trash bags per week</label>
+                        <input type="range" class="form-range" min="1" max="10" step="1">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Recycling rate</label>
+                        <input type="range" class="form-range" min="0" max="100" step="10">
+                    </div>
+                    <button class="btn btn-zero-action w-100">Save Progress</button>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Zero-Waste Resources</h4>
+                    <div class="card mb-3 border-0">
+                        <img src="img/zero-waste-book.jpg" class="card-img-top rounded" alt="Zero waste book">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Essential Reading</h5>
+                            <p class="card-text">"Zero Waste Home" by Bea Johnson</p>
+                            <a href="#" class="btn btn-sm btn-zero-action">View Book</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Join Our Community</h4>
+                    <p>Connect with others on their zero-waste journey for tips and support.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your email">
+                        </div>
+                        <button type="submit" class="btn btn-zero-action w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5" style="background-color: var(--earth-brown); color: white;">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Go Zero Waste?</h2>
+        <p class="lead mb-4">Join thousands reducing their environmental impact one step at a time.</p>
+        <a href="#" class="btn btn-light btn-lg" style="color: var(--dark-green);">Start Your Journey</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color: var(--dark-green); color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-4"><i class="fa fa-recycle me-2" style="color: var(--light-beige);"></i>ZeroWaste</h5>
+                <p>Helping people live more sustainably since 2015. Our mission is to make zero-waste living accessible to everyone.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white me-3"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-pinterest fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Learn</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Beginner's Guide</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Tips</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Recipes</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">DIY</a></li>
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Shop</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Starter Kits</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Essentials</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Gifts</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Bulk Finder</a></li>
+                    <li><a href="#" class="text-white">Discounts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-4">Stay Inspired</h5>
+                <p>Get weekly zero-waste tips and success stories.</p>
+                <form class="mb-3">
+                    <input type="email" class="form-control mb-2" placeholder="Your email">
+                    <button type="submit" class="btn btn-zero-action w-100">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 small">© 2023 ZeroWaste. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0 small">
+                    <a href="#" class="text-white">Privacy Policy</a> | 
+                    <a href="#" class="text-white">Terms</a> | 
+                    <a href="#" class="text-white">Contact</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

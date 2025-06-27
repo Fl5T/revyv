@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recycling</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+</head>
+<body>
+
+<!-- Fix navbar: use Bootstrap sticky-top, remove custom sticky JS -->
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box sticky-top" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Revive</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex align-items-center ms-auto order-md-2">
+      <button id="theme-toggle" class="btn btn-outline-secondary ms-2" title="Toggle dark/light mode" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <a class="btn btn-outline-success ms-2" id="play-game" title="Play Recycling Game" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;" href="#"><i class="fa fa-gamepad"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html">Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html">Team Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownBlog">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownPages">
+            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+        <li class="nav-item">
+          <a class="nav-link social_link mx-2" href="https://www.instagram.com/arhamrafi234/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link social_link" href="https://www.linkedin.com/in/mohammed-arham-049982302/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Neon animated background for hero section -->
+<div id="neon-bg"></div>
+
+<section id="center" class="center_h" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative;">
+  <div class="floating-3d-icon" title="Recycle" style="top: 2rem; right: 2rem; left: auto;">
+    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="32" fill="#0a0a23"/>
+      <path d="M32 14L36 22H28L32 14Z" fill="#39ff14"/>
+      <path d="M50 32L42 36V28L50 32Z" fill="#00eaff"/>
+      <path d="M32 50L28 42H36L32 50Z" fill="#a259ff"/>
+      <path d="M14 32L22 28V36L14 32Z" fill="#ff00de"/>
+      <circle cx="32" cy="32" r="18" stroke="#39ff14" stroke-width="2"/>
+    </svg>
+  </div>
+  <div style="backdrop-filter: blur(8px); background: rgba(24,28,36,0.7); border-radius: 2rem; padding: 3rem 2.5rem; box-shadow: 0 8px 32px 0 rgba(34, 139, 230, 0.10), 0 1.5px 8px 0 var(--neon-blue); max-width: 600px; width: 100%; text-align: center;">
+    <h1 style="font-size: 3rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: bold; margin-bottom: 1.2rem;">
+      <span class="flying-word">Revive</span> the <span class="flying-word">Planet</span>
+    </h1>
+    <h2 style="font-size: 2rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: 600; margin-bottom: 1.5rem; color: var(--neon-green);">
+      <span class="flying-word">Recycle</span> • <span class="flying-word">Eco</span> • <span class="flying-word">Green</span>
+    </h2>
+    <p style="font-size: 1.25rem; color: #f3f3f3; margin-bottom: 2.2rem;">
+      Empowering communities to <span class="flying-word">recycle</span> smarter and build a sustainable future.<br>
+      <span class="flying-word">Join</span> the <span class="flying-word">movement</span>.
+    </p>
+    <a class="button" href="#" style="font-size: 1.2rem;">Get Started</a>
+  </div>
+</section>
+
+<section id="about_h" class="p_3">
+    <div class="container-xl">
+	  <div class="row about_h1 text-center mb-4">
+	   <div class="col-md-12">
+	    <span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+		<h3 class="mt-2">Welcome to Revive</h3>
+		<h6 class="mt-3">MORE ABOUT US</h6>
+		<p class="mb-0 mt-3">
+			Revive: Your Eco Bud is your trusted guide to smarter recycling and sustainable living. <br>  
+			We empower individuals and communities with knowledge on proper recycling, creative <br>  
+			repurposing, and eco-friendly choices to build a cleaner, greener future.  
+			</p>			
+	   </div>
+	  </div>
+	  <div class="row about_h2">
+	   <div class="col-md-4">
+	    <div class="about_h2i text-center position-relative neon-card">
+		  <div class="about_h2i1  position-absolute w-100">
+		    <span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-leaf"></i></span>
+		  </div>
+		  <div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+		   <h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">🌱 Learn Recycling</span></a></h5>
+		   <p class="mb-0">Get clear, easy-to-follow recycling guides for plastics and non-plastics.</p>
+		  </div>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="about_h2i text-center position-relative neon-card">
+		  <div class="about_h2i1  position-absolute w-100">
+		    <span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-inbox"></i></span>
+		  </div>
+		  <div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+		   <h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">🌍 Community Hub</span></a></h5>
+		   <p class="mb-0">Connect, share, and inspire others with your sustainability stories.</p>
+		  </div>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="about_h2i text-center position-relative neon-card">
+		  <div class="about_h2i1  position-absolute w-100">
+		    <span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-calendar"></i></span>
+		  </div>
+		  <div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+		   <h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">🔄 Eco-Friendly Insights</span></a></h5>
+		   <p class="mb-0">Stay updated with the latest trends in recycling and sustainability</p>
+		  </div>
+		</div>
+	   </div>
+	  </div>
+	</div>
+</section>
+
+<section id="sched">
+<div class="schedm bg_back pt-5 pb-5">
+<div class="container-xl-1 col-md-6 ps-5">
+  <div class="row about_h1 text-center mb-4">
+	   <div class="col-md-12">
+	    <span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+		<h3 class="mt-2 text-white">Requests</h3>
+		<h6 class="mt-3 mb-0 text-white-50">Want an app built? Or just need to contact us? Fill out the form below!</h6>
+	   </div>
+	  </div>
+	  <div class="row sched_1">
+	   <div class="col-md-6">
+        <div class="sched_1i">
+		  <div class="input-group bg-white">
+		        <span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent  p-3 px-4 border-0" type="button">
+						<i class="fa fa-user fs-4"></i> </button>
+				</span>
+				<input type="text" class="form-control border-0" placeholder="Full Name">
+				
+		</div>
+		</div>
+	   </div>
+	   <div class="col-md-6">
+        <div class="sched_1i">
+		  <div class="input-group bg-white">
+		        <span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent  p-3 px-4 border-0" type="button">
+						<i class="fa fa-phone fs-4"></i> </button>
+				</span>
+				<input type="text" class="form-control border-0" placeholder="Phone Number">
+				
+		</div>
+		</div>
+	   </div>
+	  </div>
+	  
+	  <div class="row sched_1 mt-3">
+	   <div class="col-md-6">
+        <div class="sched_1i">
+		  <div class="input-group bg-white">
+		        <span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent  p-3 px-4 border-0" type="button">
+						<i class="fa fa-calendar fs-4"></i> </button>
+				</span>
+				<input type="text" class="form-control border-0" placeholder="Date">
+				
+		</div>
+		</div>
+	   </div>
+	   <div class="col-md-6">
+        <div class="sched_1i">
+		  <div class="input-group bg-white">
+		        <span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent  p-3 px-4 border-0" type="button">
+						<i class="fa fa-clock-o fs-4"></i> </button>
+				</span>
+				<input type="text" class="form-control border-0" placeholder="Time">
+				
+		</div>
+		</div>
+	   </div>
+	  </div>
+	  
+	  <div class="row sched_1 mt-3 text-center">
+	   <div class="col-md-12">
+        <div class="sched_1i">
+		  <textarea placeholder="Message" class="form-control form_text border-0"></textarea>
+		  <h6 class="mb-0 mt-4"><a class="button" href="#">ORDER PICKUP</a></h6>
+		</div>
+	   </div>
+
+	  </div>
+</div>
+</div>
+<section id="serv_h" class="p_3 bg-light">
+    <div class="container-xl">
+        <div class="row about_h1 text-center mb-4">
+            <div class="col-md-12">
+                <span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+                <h3 class="mt-2">Our Projects</h3>
+                <h6 class="mt-3 mb-0">WHAT WE DO</h6>
+            </div>
+        </div>
+        <div class="row serv_h1">
+            <div class="col-md-4">
+                <div class="serv_h1i neon-card">
+                    <div class="grid clearfix">
+                        <figure class="effect-jazz mb-0">
+                            <a href="#"><img src="img/3.jpg" class="w-100" alt="Revive App"></a>
+                        </figure>
+                    </div>
+                    <div class="serv_h1i1 p-4 bg-dark text-white">
+                        <h5><a href="#"><span class="flying-word">Revive App</span></a></h5>
+                        <p class="mb-0 mt-3">A fun and interactive eco-bud where everyone can log their impact and engage in meaningful community events!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="serv_h1i neon-card">
+                    <div class="grid clearfix">
+                        <figure class="effect-jazz mb-0">
+                            <a href="#"><img src="img/4.jpg" class="w-100" alt="Community Recycling Workshops"></a>
+                        </figure>
+                    </div>
+                    <div class="serv_h1i1 p-4 bg-dark text-white">
+                        <h5><a href="#"><span class="flying-word">Community Recycling Workshops</span></a></h5>
+                        <p class="mb-0 mt-3">We host local events teaching people creative ways to repurpose plastic waste into useful products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="serv_h1i neon-card">
+                    <div class="grid clearfix">
+                        <figure class="effect-jazz mb-0">
+                            <a href="#"><img src="img/5.jpg" class="w-100" alt="Eco-Friendly School Program"></a>
+                        </figure>
+                    </div>
+                    <div class="serv_h1i1 p-4 bg-dark text-white">
+                        <h5><a href="#"><span class="flying-word">Eco-Friendly School Program</span></a></h5>
+                        <p class="mb-0 mt-3">Partnering with schools to introduce recycling bins and educational programs for young learners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row sched_1 mt-4 text-center">
+            <div class="col-md-12">
+                <div class="sched_1i">
+                    <h6 class="mb-0"><a class="button_1" href="#">ALL SERVICES</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+	<section id="mission">
+		<div class="container-fluid px-0">
+			<div class="row mission_1 mx-0">
+				<div class="col-md-6 p-0">
+					<div class="mission_1l">
+						<div class="grid clearfix">
+							<figure class="effect-jazz mb-0">
+								<a href="#"><img src="img/22.jpg" class="w-100" alt="abc"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 p-0">
+					<div class="mission_1r p-5">
+						<span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+						<h3 class="mt-2">Our Mission</h3>
+						<h6 class="mt-3 mb-3">ABOUT US</h6>
+						<p>Our mission is to reduce plastic waste, educate communities about sustainable recycling methods, and promote a circular economy where materials are reused efficiently.</p>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<i class="fa fa-check-circle me-2"></i> REDUCING WASTE
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-0 text-dark">We actively work to minimize plastic pollution by encouraging responsible disposal and upcycling materials into new, eco-friendly products.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Vision Section -->
+				<div class="col-md-6 p-0">
+					<div class="mission_1r p-5">
+						<span class="col_blue fs-1 lh-1"><i class="fa fa-check-circle"></i></span>
+						<h3 class="mt-2">Our Vision</h3>
+						<h6 class="mt-3 mb-3">LOOKING AHEAD</h6>
+						<p>We envision a world where plastic waste is no longer an environmental threat. Our goal is to create fully sustainable communities where recycling is an effortless part of daily life, and innovative technology transforms waste into valuable resources. While this dream may seem ambitious, we believe that collective effort can bring us closer to a cleaner, greener planet.</p>
+					</div>
+				</div>
+				
+				<!-- Inspiration Section -->
+				<div class="col-md-6 p-0">
+					<div class="mission_1r p-5">
+						<span class="col_orange fs-1 lh-1"><i class="fa fa-heart"></i></span>
+						<h3 class="mt-2">Our Inspiration</h3>
+						<h6 class="mt-3 mb-3">A PERSONAL MOTIVATION</h6>
+						<p>My father has always been a source of inspiration for me. His unwavering commitment to hard work, responsibility, and giving back to the community has shaped my vision for this initiative. Watching him prioritize sustainability and care for the environment has fueled my passion for making a real impact. This project is not just about recycling—it's about honoring his values and continuing his legacy of positive change.</p>
+					</div>
+				</div>
+				
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<i class="fa fa-check-circle me-2"></i> REUSE PROGRAM
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-0 text-dark">Through our Reuse Program, we help extend the lifecycle of plastic materials by transforming them into valuable items, reducing the need for new production.</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<i class="fa fa-check-circle me-2"></i> RECYCLE MORE
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p class="mb-0 text-dark">We make recycling easy and accessible by providing clear guidelines and drop-off locations to ensure plastic waste is properly processed and repurposed.</p>
+									</div>
+								</div>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="p_3 bg-light">
+		<div class="container-xl">
+			<div class="row about_h1 text-center mb-4">
+				<div class="col-md-12">
+					<span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+					<h3 class="mt-2">FAQ</h3>
+					<h6 class="mt-3 mb-0">FREQUENTLY ASKED QUESTIONS</h6>
+				</div>
+			</div>
+			<div class="row about_h2">
+				<div class="col-md-4">
+					<div class="about_h2i text-center position-relative neon-card">
+						<div class="about_h2i1 position-absolute w-100">
+							<span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-question"></i></span>
+						</div>
+						<div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+							<h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">Why is plastic recycling important?</span></a></h5>
+							<p class="mb-0">Plastic recycling helps reduce pollution, conserves resources, and prevents harmful waste from ending up in landfills and oceans. It plays a crucial role in protecting wildlife and promoting a sustainable future.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about_h2i text-center position-relative neon-card">
+						<div class="about_h2i1 position-absolute w-100">
+							<span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-question"></i></span>
+						</div>
+						<div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+							<h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">What materials can be recycled?</span></a></h5>
+							<p class="mb-0">Common recyclable materials include plastics, glass, paper, cardboard, and metals like aluminum and steel. However, always check your local recycling guidelines to ensure proper disposal.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about_h2i text-center position-relative neon-card">
+						<div class="about_h2i1 position-absolute w-100">
+							<span class="d-inline-block bg_green text-white rounded-circle text-center fs-2"><i class="fa fa-question"></i></span>
+						</div>
+						<div class="about_h2i2 p-5 px-4 rounded-3 border_1 bg-dark text-white">
+							<h5 class="mb-3 mt-4"><a href="#"><span class="flying-word">How does your project help the environment?</span></a></h5>
+							<p class="mb-0">Our project raises awareness about recycling, provides resources on eco-friendly practices, and encourages communities to take action in reducing plastic waste through educational blogs and initiatives.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row sched_1 mt-4 text-center">
+				<div class="col-md-12">
+					<div class="sched_1i">
+						<h6 class="mb-0"><a class="button_1" href="#">TO FAQ PAGE</a></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="testim" class="p_3 carousel_p">
+			<div class="container-xl">
+				<div class="row about_h1 text-center mb-4">
+					<div class="col-md-12">
+						<span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+						<h3 class="mt-2">Testimonials</h3>
+						<h6 class="mt-3 mb-0">WHAT LEADERS SAY ABOUT THE PLANET</h6>
+					</div>
+				</div>
+				<div class="testim_1im1 clearfix">
+					<div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="testim_1im1i text-center">
+									<span class="d-inline-block fs-1 col_green"><i class="fa fa-quote-left"></i></span><br>
+									<img src="img/earth1.jpg" alt="David Attenborough" class="rounded-circle mt-3">
+									<p class="mt-3 fs-5">"The truth is: the natural world is changing. And we are totally dependent on that world. It provides our food, water, and air. It is the most precious thing we have, and we need to defend it."</p>
+									<h3 class="text-uppercase mt-4">David Attenborough</h3>
+									<h6 class="mb-0">Natural Historian</h6>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testim_1im1i text-center">
+									<span class="d-inline-block fs-1 col_green"><i class="fa fa-quote-left"></i></span><br>
+									<img src="img/earth2.jpg" alt="Greta Thunberg" class="rounded-circle mt-3">
+									<p class="mt-3 fs-5">"You are never too small to make a difference. Act as if your house is on fire—because it is."</p>
+									<h3 class="text-uppercase mt-4">Greta Thunberg</h3>
+									<h6 class="mb-0">Climate Activist</h6>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testim_1im1i text-center">
+									<span class="d-inline-block fs-1 col_green"><i class="fa fa-quote-left"></i></span><br>
+									<img src="img/7.jpg" alt="Jane Goodall" class="rounded-circle mt-3">
+									<p class="mt-3 fs-5">"What you do makes a difference, and you have to decide what kind of difference you want to make."</p>
+									<h3 class="text-uppercase mt-4">Jane Goodall</h3>
+									<h6 class="mb-0">Primatologist & Conservationist</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+<section id="faq" class="p_3 bg-light">
+    <div class="container-xl">
+	  <div class="row about_h1 text-center mb-4">
+	   <div class="col-md-12">
+	    <span class="col_green fs-1 lh-1"><i class="fa fa-recycle"></i></span>
+		<h3 class="mt-2">Latest News</h3>
+		<h6 class="mt-3 mb-0">BLOG POSTS</h6>
+	   </div>
+	  </div>
+	  <div class="row blog_h1">
+	 <div class="col-md-4">
+	   <div class="blog_h1i shadow_box position-relative neon-card">
+	    <div class="blog_h1i1 position-relative">
+	       <div class="blog_h1i1i">
+		    <div class="grid clearfix">
+		  <figure class="effect-jazz mb-0">
+			<a href="blog_detail.html"><img src="img/9.jpg" class="w-100" alt="img25"></a>
+		  </figure>
+	  </div>
+		   </div>
+		   <div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+		     <h6 class="mb-0 d-inline-block bg_green p-2 text-white px-4">Go Green</h6>
+		   </div>
+	    </div>
+	     <div class="blog_h1i2 p-4 bg-dark text-white">
+	     <ul>
+		  <li class="d-inline-block"><i class="fa fa-user me-1 col_green"></i> <a href="#">Ante Quis</a> <span class="text-muted mx-2">|</span></li>
+		  <li class="d-inline-block"><i class="fa fa-clock-o me-1 col_green"></i> <a href="#">28 July, 2021 </a> </li>
+		 </ul>
+		 <h5><a href="blog_detail.html"><span class="flying-word">"How to Build a Simple Recycling App: A Beginner's Guide"</span></a></h5>
+		 <p>Walking readers through creating a basic mobile app for tracking recycling efforts, from setting up the project to adding features like waste categorization or location-based recycling tips.</p>
+		 <h6 class="mb-0 fw-bold"><a href="blog_detail.html">Learn More <i class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+	    </div>
+	  </div>
+	 </div>
+	 <div class="col-md-4">
+	   <div class="blog_h1i shadow_box position-relative neon-card">
+	    <div class="blog_h1i1 position-relative">
+	       <div class="blog_h1i1i">
+		    <div class="grid clearfix">
+		  <figure class="effect-jazz mb-0">
+			<a href="blog3.html"><img src="img/10.jpg" class="w-100" alt="img25"></a>
+		  </figure>
+	  </div>
+		   </div>
+		   <div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+		     <h6 class="mb-0 d-inline-block bg_green p-2 text-white px-4">Go Green</h6>
+		   </div>
+	    </div>
+	     <div class="blog_h1i2 p-4 bg-dark text-white">
+	     <ul>
+		  <li class="d-inline-block"><i class="fa fa-user me-1 col_green"></i> <a href="#">Lorem Amet</a> <span class="text-muted mx-2">|</span></li>
+		  <li class="d-inline-block"><i class="fa fa-clock-o me-1 col_green"></i> <a href="#">25 July, 2021 </a> </li>
+		 </ul>
+		 <h5><a href="blog3.html"><span class="flying-word">"Recycling Right: Common Mistakes You Should Avoid"</span></a></h5>
+		 <p>A practical guide for individuals or businesses on how to properly recycle various materials, including some common misconceptions about what can or can't be recycled.</p>
+		 <h6 class="mb-0 fw-bold"><a href="blog3.html">Learn More <i class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+	    </div>
+	  </div>
+	 </div>
+	 <div class="col-md-4">
+	   <div class="blog_h1i shadow_box position-relative neon-card">
+	    <div class="blog_h1i1 position-relative">
+	       <div class="blog_h1i1i">
+		    <div class="grid clearfix">
+		  <figure class="effect-jazz mb-0">
+			<a href="blog3.html"><img src="img/11.jpg" class="w-100" alt="img25"></a>
+		  </figure>
+	  </div>
+		   </div>
+		   <div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+		     <h6 class="mb-0 d-inline-block bg_green p-2 text-white px-4">Go Green</h6>
+		   </div>
+	    </div>
+	     <div class="blog_h1i2 p-4 bg-dark text-white">
+	     <ul>
+		  <li class="d-inline-block"><i class="fa fa-user me-1 col_green"></i> <a href="#">Dolor Porta</a> <span class="text-muted mx-2">|</span></li>
+		  <li class="d-inline-block"><i class="fa fa-clock-o me-1 col_green"></i> <a href="#">29 July, 2021 </a> </li>
+		 </ul>
+		 <h5><a href="blog3.html"><span class="flying-word">"5 Simple Ways to Make Your Home More Eco-Friendly"</span></a></h5>
+		 <p>Easy-to-follow tips that encourage sustainable living, from reducing plastic waste to setting up a home composting system and the benefits of eco-friendly appliances.</p>
+		 <h6 class="mb-0 fw-bold"><a href="blog3.html">Learn More <i class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+	    </div>
+	  </div>
+	 </div>
+	</div>
+	  
+	  <div class="row sched_1 mt-4 text-center">
+	   <div class="col-md-12">
+        <div class="sched_1i">
+		  <h6 class="mb-0"><a class="button_1" href="#">OUR BLOG</a></h6>
+		</div>
+	   </div>
+
+	  </div>
+	</div>
+</section>
+
+<section id="subs" class="pt-5 pb-5 bg_green">
+    <div class="container-xl">
+	    <div class="row center_h1">
+    <div class="col-md-9">
+	 <div class="center_h1l">
+	   <div class="center_h1li row">
+	    <div class="col-md-6">
+		 <div class="center_h1lil">
+		  <div class="center_h1lili row">
+		   <div class="col-md-2">
+		    <div class="center_h1lilil">
+			  <span class="d-inline-block bg-white col_green rounded-circle text-center fs-3"><i class="fa fa-phone"></i></span>
+			</div>
+		   </div>
+		   <div class="col-md-10">
+		    <div class="center_h1lilir">
+			 <h5 class="text-white">+(971) 050-881-9640 </h5>
+			 <h6 class="mb-0 text-light font_14">Dubai, U.A.E</h6>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+		<div class="col-md-6">
+		 <div class="center_h1lil">
+		  <div class="center_h1lili row">
+		   <div class="col-md-2">
+		    <div class="center_h1lilil">
+			  <span class="d-inline-block bg-white col_green rounded-circle text-center fs-3"><i class="fa fa-clock-o"></i></span>
+			</div>
+		   </div>
+		   <div class="col-md-10">
+		    <div class="center_h1lilir">
+			 <h5 class="text-white">Together for a Cleaner, Greener World.</h5>
+			 <h6 class="mb-0 text-light font_14">Always here for a chat!</h6>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+	   </div>
+	 </div>
+	</div>
+	<div class="col-md-3">
+	 <div class="center_h1r text-end">
+	  <div class="input-group bg-white">
+				<input type="text" class="form-control border-0" placeholder="Email Address">
+				<span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent rounded-0 p-3 px-4 border-0" type="button">
+						<i class="fa fa-pencil"></i> </button>
+				</span>
+		</div>
+	 </div>
+	</div>
+  </div>
+	</div>
+</section>
+
+<section id="gallery">
+    <div class="container-fluid p-0">
+	  <div class="contact_2 row mx-0">
+      <div class="col-md-12 p-0">
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115694.8352593671!2d55.1712672!3d25.2048493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4346e8a8b1e1%3A0x8e6e8e8e8e8e8e8e!2sDubai%2C%20UAE!5e0!3m2!1sen!2sae!4v1710000000000!5m2!1sen!2sae" height="400" style="border:0; width:100%;" allowfullscreen=""></iframe>
+	  </div>
+  </div>
+	 <div class="homei row mx-0">
+	     <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/12.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/12.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/13.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/13.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/14.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/14.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/15.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/15.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/16.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/16.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/17.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/17.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+	   </div>	
+	</div>
+   </section>
+</section>
+
+<section id="footer" class="p_3">
+    <div class="container-xl">
+       <div class="footer_1 row">
+        <div class="col-md-4">
+         <div class="footer_1i">
+          <h4 class="mb-4"><a class="text-white" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Revive: Your Eco Bud</a></h4>
+          <p class="text-white-50">Dedicated to educating and empowering individuals and businesses for a sustainable future through recycling and clean energy.</p>
+          <h6 class="text-light"><i class="fa fa-map-marker col_green me-1"></i> Dubai, UAE</h6>
+          <h6 class="mt-3"><i class="fa fa-phone col_green me-1"></i> <a  class="text-light" href="#">+971 50 881 9640</a></h6>
+          <h6 class="mt-3 mb-0"><i class="fa fa-envelope col_green me-1"></i> <a  class="text-light" href="#">reviveapp@gmail.com</a></h6>
+         </div>
+        </div>
+        <div class="col-md-4">
+         <div class="footer_1i row">
+           <div class="col-md-6"><img src="img/35-3.jpg" class="w-100" alt="Recycling at work"> </div>
+           <div class="col-md-6"><img src="img/35-1.jpg" class="w-100" alt="Eco-friendly community"> </div>
+           <div class="col-md-6"><img src="img/35-2.jpg" class="w-100" alt="Sustainable practices"> </div>
+           <div class="col-md-6"><img src="img/35-4.jpg" class="w-100" alt="Clean energy solutions"> </div>
+         </div>
+        </div>
+        <div class="col-md-4">
+         <div class="footer_1i">
+          <h4 class="mb-4 text-white">Recent News</h4>
+         <p class="text-white-50 mb-2">How Recycling Can Save the Planet: Join the Movement</p>
+         <h6 class="col_green">January 15, 2025</h6>
+          <p class="text-white-50 mb-2 mt-3">Tips for Properly Disposing of E-Waste and Its Impact</p>
+         <h6 class="col_green">January 22, 2025</h6>
+          <p class="text-white-50 mb-2 mt-3">The Future of Clean Energy: Innovations in Sustainability</p>
+         <h6 class="col_green mb-0">January 29, 2025</h6>
+         </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+<section id="footer_b" class="pt-3 pb-3">
+ <div class="container-xl">
+    <div class="row footer_b1">
+     <div class="col-md-12">
+      <div class="footer_b1l text-center">
+        <p class="mb-0">© 2025 Revive: Your Eco Bud. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+      </div>
+     </div>
+    </div>
+ </div>
+</section>
+
+<!-- Add Three.js, GSAP, and Lenis.js -->
+<script src="js/three.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script>
+// Theme toggle logic
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  themeIcon.textContent = theme === 'dark' ? '🌞' : '🌙';
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+}
+(function(){
+  const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  setTheme(savedTheme);
+  themeToggle.onclick = () => {
+    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  };
+})();
+// 3D background with Three.js
+(function(){
+  const bg = document.getElementById('neon-bg');
+  if (!bg || !window.THREE) return;
+  let renderer, scene, camera, cubes = [], animId;
+  function init3D() {
+    renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setClearColor(0x000000, 0);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.domElement.style.position = 'fixed';
+    renderer.domElement.style.top = 0;
+    renderer.domElement.style.left = 0;
+    renderer.domElement.style.zIndex = 0;
+    renderer.domElement.id = 'three-bg';
+    bg.appendChild(renderer.domElement);
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
+    camera.position.z = 30;
+    // Add cubes
+    for (let i = 0; i < 40; i++) {
+      const size = Math.random() * 0.8 + 0.4;
+      const color = getComputedStyle(document.documentElement).getPropertyValue('--neon-green').trim() || '#39ff14';
+      const geometry = new THREE.BoxGeometry(size, size, size);
+      const material = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.7, metalness: 0.2, roughness: 0.5 });
+      const cube = new THREE.Mesh(geometry, material);
+      cube.position.set((Math.random()-0.5)*40, (Math.random()-0.5)*20, (Math.random()-0.5)*40);
+      scene.add(cube);
+      cubes.push(cube);
+    }
+    // Lighting
+    const ambient = new THREE.AmbientLight(0xffffff, 0.7);
+    scene.add(ambient);
+    const dir = new THREE.DirectionalLight(0xffffff, 0.5);
+    dir.position.set(0, 10, 10);
+    scene.add(dir);
+    window.addEventListener('resize', onResize);
+    animate();
+  }
+  function onResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
+  function animate() {
+    animId = requestAnimationFrame(animate);
+    cubes.forEach((cube, i) => {
+      cube.rotation.x += 0.002 + i*0.0001;
+      cube.rotation.y += 0.003 + i*0.0001;
+      cube.position.x += Math.sin(Date.now()/2000 + i) * 0.002;
+      cube.position.y += Math.cos(Date.now()/2500 + i) * 0.002;
+      // Loop cubes
+      if (cube.position.x > 25) cube.position.x = -25;
+      if (cube.position.x < -25) cube.position.x = 25;
+      if (cube.position.y > 15) cube.position.y = -15;
+      if (cube.position.y < -15) cube.position.y = 15;
+    });
+    renderer.render(scene, camera);
+  }
+  // Theme adaptation
+  const observer = new MutationObserver(() => {
+    cubes.forEach(cube => {
+      const color = getComputedStyle(document.documentElement).getPropertyValue('--neon-green').trim() || '#39ff14';
+      cube.material.color.set(color);
+      cube.material.emissive.set(color);
+    });
+    renderer.setClearColor(document.documentElement.getAttribute('data-theme') === 'dark' ? 0x181c24 : 0xf7f7f7, 0.15);
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  init3D();
+})();
+// Fade-in animation with GSAP
+if (window.gsap) {
+  gsap.utils.toArray('section, .neon-card, .card').forEach(el => {
+    gsap.from(el, { opacity: 0, y: 40, duration: 1, scrollTrigger: { trigger: el, start: 'top 90%' } });
+  });
+}
+// Play game modal logic
+const playBtn = document.getElementById('play-game');
+if (playBtn) {
+  playBtn.onclick = function(e) {
+    e.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('gameModal'));
+    modal.show();
+    // TODO: Load/init game in #game-container
+  };
+}
+</script>
+
+<!-- Add modal for game (hidden by default) -->
+<div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="gameModalLabel"><i class="fa fa-gamepad me-2"></i> Recycling Game</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0" id="game-container" style="height:90vh;overflow:hidden;"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<iframe 
+  src="https://studio.pickaxe.co/_embed/PBT5OB22X2?d=deployment-def812f6-3e66-4ad3-9632-8a84d63d0fe7" 
+  style="width: 100%; height: 500px; max-width: 700px; border-radius: 4px;" 
+  frameborder="0">
+</iframe>

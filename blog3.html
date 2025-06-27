@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Composting 101: Turning Waste Into Gold</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --earth-brown: #8B5A2B;
+            --leaf-green: #4A7C59;
+            --compost-gold: #D4A76A;
+            --soil-dark: #3A2D13;
+            --light-cream: #F8F4E9;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--light-cream);
+            color: var(--soil-dark);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--soil-dark);
+        }
+        
+        .bg-compost-hero {
+            background: linear-gradient(rgba(58, 45, 19, 0.7), rgba(58, 45, 19, 0.7)), 
+                        url('img/compost-hero.jpg') center/cover;
+        }
+        
+        .compost-badge {
+            background-color: var(--leaf-green);
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .compost-tip {
+            border-left: 4px solid var(--compost-gold);
+            background-color: rgba(212, 167, 106, 0.1);
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .ingredient-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .ingredient-card.green {
+            border-top: 4px solid var(--leaf-green);
+        }
+        
+        .ingredient-card.brown {
+            border-top: 4px solid var(--earth-brown);
+        }
+        
+        .compost-icon {
+            color: var(--compost-gold);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .btn-compost {
+            background-color: var(--leaf-green);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-compost:hover {
+            background-color: var(--earth-brown);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 50px;
+            margin: 40px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--compost-gold);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--leaf-green);
+            border: 3px solid var(--compost-gold);
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--compost-gold);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Electronic Waste: The Silent Threat</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="css/font-awesome.min.css" rel="stylesheet" >
+        <link href="css/global.css" rel="stylesheet">
+        <link href="css/blog.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    
+    </head>
+    <body>
+    
+    <section id="top" class="bg_green pt-2 pb-2">
+    <div class="container-xl">
+     <div class="row top_1">
+      <div class="col-md-8">
+       <div class="top_1l">
+        <ul class="mb-0">
+            <li class="text-white d-inline-block">Welcome to Plastic Recycling Facts</li>
+            <li class="text-white d-inline-block mx-2">| </li>
+            <li class="d-inline-block"> <a class="text-white " href="#">How to Find Us</a> </li>
+            <li class="text-white d-inline-block mx-2">| </li>
+            <li class="d-inline-block"> <a class="text-white " href="#">Give Feedback</a> </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="top_1r text-end">
+          <div class="input-group">
+                    <input type="text" class="form-control border-0 bg-transparent text-white" placeholder="Search Keyword">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary col_green bg-transparent rounded-0 p-1 px-3 border-0" type="button">
+                            <i class="fa fa-search"></i> </button>
+                    </span>
+            </div>
+       </div>
+      </div>
+     </div>
+    </div>
+</section>
+
+<section id="header">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Plastic Truth</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	   <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+		 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+		
+		<li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects </a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html"> Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html"> Team Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html"> Contact Us</a></li>
+          </ul>
+        </li>
+		
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link mx-2" href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<!-- Hero Section -->
+<section class="py-5 bg-compost-hero text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <span class="compost-badge mb-3 d-inline-block">Beginner's Guide</span>
+                <h1 class="display-4 mb-4">Composting 101: Turning Waste Into Garden Gold</h1>
+                <p class="lead mb-4">Discover how to transform kitchen scraps and yard waste into nutrient-rich soil that will make your plants thrive.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#start" class="btn btn-compost">Start Composting</a>
+                    <a href="#video" class="btn btn-outline-light">Watch Tutorial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <p class="lead">Every year, the average household throws away hundreds of pounds of organic waste that could be turned into "black gold" for your garden. Composting is nature's way of recycling, and with this guide, you'll learn how to harness this powerful process right in your backyard.</p>
+                    
+                    <div class="compost-tip">
+                        <h4><i class="fa fa-lightbulb-o compost-icon"></i>Did You Know?</h4>
+                        <p>Composting can divert up to 30% of household waste from landfills, where it would otherwise produce methane, a potent greenhouse gas.</p>
+                    </div>
+                    
+                    <h2 id="start" class="mt-5 mb-4">Getting Started: The Basics</h2>
+                    <p>Composting requires just four basic ingredients in the right proportions:</p>
+                    
+                    <div class="row my-4">
+                        <div class="col-md-6">
+                            <div class="ingredient-card green">
+                                <div class="p-4">
+                                    <h4><i class="fa fa-recycle me-2"></i> Greens</h4>
+                                    <p class="mb-0">Nitrogen-rich materials like vegetable scraps, coffee grounds, and fresh grass clippings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ingredient-card brown">
+                                <div class="p-4">
+                                    <h4><i class="fa fa-tree me-2"></i> Browns</h4>
+                                    <p class="mb-0">Carbon-rich materials like dried leaves, straw, and shredded paper.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ingredient-card">
+                                <div class="p-4">
+                                    <h4><i class="fa fa-tint me-2"></i> Water</h4>
+                                    <p class="mb-0">Moisture to help break down organic matter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ingredient-card">
+                                <div class="p-4">
+                                    <h4><i class="fa fa-wind me-2"></i> Air</h4>
+                                    <p class="mb-0">Oxygen for the microorganisms doing the work.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-4">The Perfect Ratio</h3>
+                    <p>Aim for a 2:1 ratio of browns to greens by volume. This provides the ideal carbon-to-nitrogen balance for efficient decomposition.</p>
+                    
+                    <div class="text-center my-5">
+                        <img src="img/compost-layers.jpg" alt="Compost layers diagram" class="img-fluid rounded shadow">
+                        <p class="text-muted mt-2">Layering greens and browns creates the perfect composting environment</p>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">What You Can Compost</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <h4><i class="fa fa-check-circle compost-icon"></i> Do Compost</h4>
+                                <ul>
+                                    <li>Fruit and vegetable scraps</li>
+                                    <li>Eggshells</li>
+                                    <li>Coffee grounds and filters</li>
+                                    <li>Tea bags (no staples)</li>
+                                    <li>Nut shells</li>
+                                    <li>Yard trimmings</li>
+                                    <li>Shredded newspaper</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <h4><i class="fa fa-times-circle compost-icon"></i> Don't Compost</h4>
+                                <ul>
+                                    <li>Meat or fish scraps</li>
+                                    <li>Dairy products</li>
+                                    <li>Fats and oils</li>
+                                    <li>Pet wastes</li>
+                                    <li>Diseased plants</li>
+                                    <li>Coal or charcoal ash</li>
+                                    <li>Chemically treated wood</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">The Composting Timeline</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Week 1-2: Initial Breakdown</h4>
+                            <p>Microorganisms begin breaking down soft materials. The pile will heat up as bacteria multiply.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Week 3-4: Active Phase</h4>
+                            <p>Temperature peaks (can reach 130-160°F). Turn the pile to incorporate oxygen.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Month 2-3: Cooling Down</h4>
+                            <p>Materials darken and break down further. Fungi and earthworms become more active.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Month 3-6: Finished Compost</h4>
+                            <p>The pile cools completely. Compost is dark, crumbly, and smells earthy.</p>
+                        </div>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">Composting Benefits</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="benefit-card text-center">
+                                <div class="benefit-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h4>Environmental</h4>
+                                <p>Reduces landfill waste and methane emissions while conserving resources.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="benefit-card text-center">
+                                <div class="benefit-icon">
+                                    <i class="fa fa-leaf"></i>
+                                </div>
+                                <h4>Garden</h4>
+                                <p>Creates nutrient-rich soil that improves plant growth and water retention.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="benefit-card text-center">
+                                <div class="benefit-icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <h4>Economic</h4>
+                                <p>Saves money on fertilizers, soil amendments, and garbage disposal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="video" class="embed-responsive embed-responsive-16by9 my-5">
+                        <iframe class="embed-responsive-item rounded shadow" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="compost-tip bg-light">
+                        <h4><i class="fa fa-question-circle compost-icon"></i>Troubleshooting Tips</h4>
+                        <p><strong>Smelly compost?</strong> Add more browns and turn the pile to aerate.<br>
+                        <strong>Not decomposing?</strong> Add greens or moisten dry materials.<br>
+                        <strong>Attracting pests?</strong> Bury food scraps under brown layers.</p>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="#" class="btn btn-compost btn-lg">Download Our Complete Composting Guide</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Quick Start Guide</h4>
+                    <ol class="ps-3">
+                        <li class="mb-2">Choose a shady spot near a water source</li>
+                        <li class="mb-2">Start with a layer of coarse browns</li>
+                        <li class="mb-2">Alternate 2 parts browns to 1 part greens</li>
+                        <li class="mb-2">Keep moist like a wrung-out sponge</li>
+                        <li class="mb-2">Turn pile every 2-4 weeks</li>
+                        <li>Harvest when dark and crumbly (3-6 months)</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Composting Methods</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Bin Composting</h5>
+                            <p class="mb-1 small">Contained systems for urban spaces</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Tumbler Composting</h5>
+                            <p class="mb-1 small">Fast, aerated, and pest-resistant</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Vermicomposting</h5>
+                            <p class="mb-1 small">Using worms for indoor composting</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Bokashi</h5>
+                            <p class="mb-1 small">Fermentation method for all food waste</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Join Our Community</h4>
+                    <p>Connect with other compost enthusiasts to share tips and get advice.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <button type="submit" class="btn btn-compost w-100">Sign Up</button>
+                    </form>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Seasonal Tips</h4>
+                    <div class="card mb-3 border-0">
+                        <img src="img/seasonal-compost.jpg" class="card-img-top rounded" alt="Seasonal composting">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Summer Composting</h5>
+                            <p class="card-text">Keep your pile moist during hot weather and turn more frequently to maintain airflow.</p>
+                            <a href="#" class="btn btn-sm btn-compost">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-5" style="background-color: var(--earth-brown); color: white;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="mb-3">Get Monthly Composting Tips</h3>
+                <p class="mb-md-0">Subscribe to our newsletter for seasonal advice, troubleshooting help, and success stories from our community.</p>
+            </div>
+            <div class="col-md-6">
+                <form class="row g-2">
+                    <div class="col-8">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-compost w-100">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color: var(--soil-dark); color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-4"><i class="fa fa-leaf me-2" style="color: var(--compost-gold);"></i>CompostHub</h5>
+                <p>Helping households turn waste into garden gold since 2015. Our mission is to make composting accessible to everyone.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white me-3"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Resources</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Guides</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">FAQs</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Videos</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Tools</a></li>
+                    <li><a href="#" class="text-white">Glossary</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Community</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Forums</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Events</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Stories</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Challenges</a></li>
+                    <li><a href="#" class="text-white">Contests</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-4">Have Questions?</h5>
+                <p><i class="fa fa-envelope me-2" style="color: var(--compost-gold);"></i> help@composthub.com</p>
+                <p><i class="fa fa-phone me-2" style="color: var(--compost-gold);"></i> 1-800-COMPOST</p>
+                <p class="mb-0"><i class="fa fa-map-marker me-2" style="color: var(--compost-gold);"></i> 123 Garden Way, Greenville</p>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 small">© 2023 CompostHub. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0 small">
+                    <a href="#" class="text-white">Privacy Policy</a> | 
+                    <a href="#" class="text-white">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

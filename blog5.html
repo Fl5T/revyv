@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Impact of Plastic on Marine Life</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ocean-blue: #1A6F8B;
+            --deep-sea: #0D3B4C;
+            --coral: #FF7E6B;
+            --seafoam: #A8DADC;
+            --sand: #F4F1DE;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--sand);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--deep-sea);
+        }
+        
+        .bg-ocean-hero {
+            background: linear-gradient(rgba(13, 59, 76, 0.8), rgba(13, 59, 76, 0.8)), 
+                        url('img/ocean-plastic-hero.jpg') center/cover;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .impact-badge {
+            background-color: var(--coral);
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+            border-top: 5px solid var(--ocean-blue);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--ocean-blue);
+            margin-bottom: 10px;
+        }
+        
+        .marine-icon {
+            color: var(--ocean-blue);
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+        
+        .btn-ocean-action {
+            background-color: var(--ocean-blue);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .btn-ocean-action:hover {
+            background-color: var(--deep-sea);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .impact-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .marine-fact {
+            background-color: var(--seafoam);
+            border-left: 4px solid var(--ocean-blue);
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .species-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .species-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .solution-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            background-color: var(--ocean-blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Truth About Plastic Recycling</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<section id="top" class="bg_green pt-2 pb-2">
+<div class="container-xl">
+ <div class="row top_1">
+  <div class="col-md-8">
+   <div class="top_1l">
+    <ul class="mb-0">
+		<li class="text-white d-inline-block">Welcome to Plastic Recycling Facts</li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">How to Find Us</a> </li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">Give Feedback</a> </li>
+	</ul>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="top_1r text-end">
+      <div class="input-group">
+				<input type="text" class="form-control border-0 bg-transparent text-white" placeholder="Search Keyword">
+				<span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent rounded-0 p-1 px-3 border-0" type="button">
+						<i class="fa fa-search"></i> </button>
+				</span>
+		</div>
+   </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="header">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Plastic Truth</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	   <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+		 
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+		
+		<li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects </a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html"> Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html"> Team Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html"> Contact Us</a></li>
+          </ul>
+        </li>
+		
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link mx-2" href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link social_link" href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<!-- Hero Section -->
+<section class="py-5 bg-ocean-hero text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <span class="impact-badge mb-3">Plastic Crisis</span>
+                <h1 class="display-4 mb-4">The Impact of Plastic on Marine Life</h1>
+                <p class="lead mb-4">Every year, millions of tons of plastic waste enter our oceans, threatening marine ecosystems and the creatures that call them home.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#solutions" class="btn btn-ocean-action">Take Action</a>
+                    <a href="#video" class="btn btn-outline-light">Watch Documentary</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article>
+                    <p class="lead">Plastic pollution has become one of the most pressing environmental challenges of our time. From the deepest ocean trenches to the most remote Arctic ice, plastic waste is now found everywhere in our marine environments, with devastating consequences for ocean life.</p>
+                    
+                    <div class="marine-fact">
+                        <h4><i class="fa fa-exclamation-triangle marine-icon"></i>Did You Know?</h4>
+                        <p>By 2050, there could be more plastic in the ocean than fish by weight if current trends continue.</p>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">The Scale of the Problem</h2>
+                    <p>Each year, an estimated <strong>8 million metric tons</strong> of plastic enter our oceans. That's equivalent to dumping a garbage truck full of plastic into the ocean every minute.</p>
+                    
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <div class="stat-number">11</div>
+                                <h5>Million Tons</h5>
+                                <p>Enter oceans annually</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <div class="stat-number">700</div>
+                                <h5>Marine Species</h5>
+                                <p>Affected by plastic</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card text-center">
+                                <div class="stat-number">90%</div>
+                                <h5>Seabirds</h5>
+                                <p>Have plastic in their guts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center my-5">
+                        <img src="img/plastic-pollution-infographic.jpg" alt="Plastic pollution infographic" class="img-fluid rounded shadow">
+                        <p class="text-muted mt-2">How plastic moves through marine ecosystems</p>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">How Plastic Harms Marine Life</h2>
+                    <div class="impact-section">
+                        <h3><i class="fa fa-fish marine-icon"></i>Entanglement</h3>
+                        <p>Abandoned fishing nets, plastic bags, and other debris entangle marine animals like seals, turtles, and whales, often leading to injury, suffocation, or starvation.</p>
+                    </div>
+                    
+                    <div class="impact-section">
+                        <h3><i class="fa fa-utensils marine-icon"></i>Ingestion</h3>
+                        <p>Many marine animals mistake plastic for food. Turtles eat plastic bags thinking they're jellyfish, while seabirds feed plastic to their chicks, reducing survival rates.</p>
+                    </div>
+                    
+                    <div class="impact-section">
+                        <h3><i class="fa fa-virus marine-icon"></i>Toxic Effects</h3>
+                        <p>Plastics absorb toxic chemicals from seawater. When ingested, these toxins accumulate up the food chain, potentially affecting human health through seafood consumption.</p>
+                    </div>
+                    
+                    <div class="impact-section">
+                        <h3><i class="fa fa-home marine-icon"></i>Habitat Destruction</h3>
+                        <p>Plastic waste smothers coral reefs and seafloor habitats, disrupting entire ecosystems and reducing biodiversity.</p>
+                    </div>
+                    
+                    <h2 class="mt-5 mb-4">Species Most Affected</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="species-card">
+                                <img src="img/sea-turtle-plastic.jpg" class="img-fluid w-100" alt="Sea turtle with plastic">
+                                <div class="p-4">
+                                    <h4>Sea Turtles</h4>
+                                    <p>52% of all sea turtles have eaten plastic. Just one piece gives a turtle a 22% chance of dying.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="species-card">
+                                <img src="img/albatross-plastic.jpg" class="img-fluid w-100" alt="Albatross with plastic">
+                                <div class="p-4">
+                                    <h4>Seabirds</h4>
+                                    <p>90% of seabirds have plastic in their stomachs, with some found to contain over 200 pieces.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="species-card">
+                                <img src="img/whale-plastic.jpg" class="img-fluid w-100" alt="Whale with plastic">
+                                <div class="p-4">
+                                    <h4>Whales & Dolphins</h4>
+                                    <p>Many cetaceans die from intestinal blockages after consuming plastic debris.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="species-card">
+                                <img src="img/coral-plastic.jpg" class="img-fluid w-100" alt="Coral with plastic">
+                                <div class="p-4">
+                                    <h4>Coral Reefs</h4>
+                                    <p>Plastic increases disease risk in corals from 4% to 89% when in contact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 id="solutions" class="mt-5 mb-4">What We Can Do</h2>
+                    <p>While the problem is immense, there are concrete actions we can all take to reduce plastic's impact on marine life:</p>
+                    
+                    <div class="solution-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Reduce Single-Use Plastics</h4>
+                            <p>Carry reusable bags, bottles, and containers. Say no to plastic straws and cutlery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>Support Plastic Bans</h4>
+                            <p>Advocate for policies that ban unnecessary single-use plastics in your community.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>Participate in Cleanups</h4>
+                            <p>Join beach or river cleanups to prevent trash from reaching the ocean.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4>Choose Sustainable Seafood</h4>
+                            <p>Support fisheries that use methods reducing plastic pollution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-step">
+                        <div class="step-number">5</div>
+                        <div>
+                            <h4>Spread Awareness</h4>
+                            <p>Educate others about the impact of plastic on marine ecosystems.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="video" class="embed-responsive embed-responsive-16by9 my-5">
+                        <iframe class="embed-responsive-item rounded shadow" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="marine-fact bg-light">
+                        <h4><i class="fa fa-lightbulb-o marine-icon"></i>Success Story</h4>
+                        <p>After implementing a plastic bag ban, Ireland reduced plastic bag litter by <strong>95%</strong> and raised public awareness about plastic waste.</p>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="#" class="btn btn-ocean-action btn-lg">Join the Movement</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Plastic Pollution Facts</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-clock-o me-3" style="color: var(--ocean-blue);"></i>
+                            <span>Plastic takes <strong>400+ years</strong> to degrade</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-shopping-bag me-3" style="color: var(--ocean-blue);"></i>
+                            <span><strong>1 million</strong> plastic bags used every minute</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-wine-bottle me-3" style="color: var(--ocean-blue);"></i>
+                            <span><strong>1 million</strong> plastic bottles bought every minute</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="fa fa-microscope me-3" style="color: var(--ocean-blue);"></i>
+                            <span>Microplastics found in <strong>90%</strong> of table salt</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Take the Pledge</h4>
+                    <p>Commit to reducing your plastic footprint with these simple actions:</p>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="pledge1">
+                        <label class="form-check-label" for="pledge1">Use reusable water bottles</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="pledge2">
+                        <label class="form-check-label" for="pledge2">Bring my own shopping bags</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="pledge3">
+                        <label class="form-check-label" for="pledge3">Avoid plastic straws</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="pledge4">
+                        <label class="form-check-label" for="pledge4">Choose products with less packaging</label>
+                    </div>
+                    <button class="btn btn-ocean-action w-100 mt-3">I Pledge!</button>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm mb-4">
+                    <h4 class="mb-4">Upcoming Events</h4>
+                    <div class="card mb-3 border-0">
+                        <img src="img/beach-cleanup.jpg" class="card-img-top rounded" alt="Beach cleanup">
+                        <div class="card-body px-0">
+                            <h5 class="card-title">Coastal Cleanup Day</h5>
+                            <p class="card-text">Join thousands worldwide removing trash from beaches.</p>
+                            <a href="#" class="btn btn-sm btn-ocean-action">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Plastic Alternatives</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Bamboo Toothbrushes</h5>
+                            <p class="mb-1 small">Biodegradable alternative to plastic</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Beeswax Wraps</h5>
+                            <p class="mb-1 small">Replace plastic food wrap</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Metal Straws</h5>
+                            <p class="mb-1 small">Reusable and durable</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <h5 class="mb-1">Glass Containers</h5>
+                            <p class="mb-1 small">Safe alternative to plastic storage</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5" style="background-color: var(--coral); color: white;">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Make a Difference?</h2>
+        <p class="lead mb-4">Join our global community working to protect marine life from plastic pollution.</p>
+        <a href="#" class="btn btn-light btn-lg" style="color: var(--deep-sea);">Get Involved Today</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color: var(--deep-sea); color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-4"><i class="fa fa-fish me-2" style="color: var(--seafoam);"></i>OceanGuard</h5>
+                <p>Dedicated to protecting marine ecosystems from plastic pollution through education, advocacy, and action.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white me-3"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Learn</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Facts</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Solutions</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Species</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Research</a></li>
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0">
+                <h5 class="mb-4">Act</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-white">Cleanups</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Advocacy</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Donate</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Volunteer</a></li>
+                    <li><a href="#" class="text-white">Partners</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-4">Stay Updated</h5>
+                <p>Subscribe to our newsletter for the latest on ocean conservation efforts.</p>
+                <form class="mb-3">
+                    <input type="email" class="form-control mb-2" placeholder="Your email">
+                    <button type="submit" class="btn btn-ocean-action w-100">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 small">© 2023 OceanGuard. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0 small">
+                    <a href="#" class="text-white">Privacy Policy</a> | 
+                    <a href="#" class="text-white">Terms</a> | 
+                    <a href="#" class="text-white">Contact</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

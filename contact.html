@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recycling</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/about.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box sticky-top" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Revive</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex align-items-center ms-auto order-md-2">
+      <button id="theme-toggle" class="btn btn-outline-secondary ms-2" title="Toggle dark/light mode" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <a class="btn btn-outline-success ms-2" id="play-game" title="Play Recycling Game" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;" href="#"><i class="fa fa-gamepad"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html">Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html">Team Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownBlog">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownPages">
+            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+        <li class="nav-item">
+          <a class="nav-link social_link mx-2" href="https://www.instagram.com/arhamrafi234/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link social_link" href="https://www.linkedin.com/in/mohammed-arham-049982302/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="neon-bg"></div>
+
+<section id="top" class="bg_green pt-2 pb-2">
+<div class="container-xl">
+ <div class="row top_1">
+  <div class="col-md-8">
+   <div class="top_1l">
+    <ul class="mb-0">
+		<li class="text-white d-inline-block">Welcome to Electronics Recycling </li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">How to Find Us</a> </li>
+		<li class="text-white d-inline-block mx-2">| </li>
+		<li class="d-inline-block"> <a class="text-white " href="#">Give Feedback</a> </li>
+	</ul>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="top_1r text-end">
+      <div class="input-group">
+				<input type="text" class="form-control border-0 bg-transparent text-white" placeholder="Search Keyword">
+				<span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent rounded-0 p-1 px-3 border-0" type="button">
+						<i class="fa fa-search"></i> </button>
+				</span>
+		</div>
+   </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="center" class="center_h" style="min-height:unset; padding-top:0; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative;">
+  <div class="floating-3d-icon" title="Recycle" style="top: 2rem; right: 2rem; left: auto;">
+    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="32" fill="#0a0a23"/>
+      <path d="M32 14L36 22H28L32 14Z" fill="#39ff14"/>
+      <path d="M50 32L42 36V28L50 32Z" fill="#00eaff"/>
+      <path d="M32 50L28 42H36L32 50Z" fill="#a259ff"/>
+      <path d="M14 32L22 28V36L14 32Z" fill="#ff00de"/>
+      <circle cx="32" cy="32" r="18" stroke="#39ff14" stroke-width="2"/>
+    </svg>
+  </div>
+  <div style="backdrop-filter: blur(8px); background: rgba(24,28,36,0.7); border-radius: 2rem; padding: 3rem 2.5rem; box-shadow: 0 8px 32px 0 rgba(34, 139, 230, 0.10), 0 1.5px 8px 0 var(--neon-blue); max-width: 600px; width: 100%; text-align: center;">
+    <h1 style="font-size: 3rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: bold; margin-bottom: 1.2rem;">
+      <span class="flying-word">Contact</span> <span class="flying-word">Us</span>
+    </h1>
+    <h2 style="font-size: 2rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: 600; margin-bottom: 1.5rem; color: var(--neon-green);">
+      <span class="flying-word">Eco</span> • <span class="flying-word">Connect</span> • <span class="flying-word">Support</span>
+    </h2>
+    <p style="font-size: 1.25rem; color: #f3f3f3; margin-bottom: 2.2rem;">
+      Reach out to <span class="flying-word">join</span> the <span class="flying-word">movement</span>.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="p_3">
+ <div class="container-xl">
+   <div class="contact_2 row clearfix">
+    <div class="col-md-8">
+      <div class="contact_2l clearfix neon-card">
+	    <div class="blog_dt1l35">
+		<div class="row quote_2">
+       <div class="col-md-6">
+	    <div class="quote_2l">
+		 <input placeholder="Name" class="form-control" type="text">
+		</div>
+	   </div>
+	   <div class="col-md-6">
+	    <div class="quote_2l">
+		 <input placeholder="Email Address" class="form-control" type="text">
+		</div>
+	   </div>
+     </div>
+	    <div class="row quote_2 mt-4 text-center">
+       <div class="col-md-6">
+	    <div class="quote_2l">
+		 <input placeholder="Phone Number" class="form-control" type="text">
+		</div>
+	   </div>
+	   <div class="col-md-6">
+	    <div class="quote_2l">
+		 <input placeholder="Website" class="form-control" type="text">
+		</div>
+	   </div>
+     </div>
+	    <div class="row quote_2 mt-4 text-center">
+	   <div class="col-md-12">
+	    <div class="quote_2l">
+		 <textarea  placeholder="Write a Message" class="form-control form_text"></textarea>
+		</div>
+	   </div>
+     </div>
+	    <div class="row quote_2 mt-4">
+	   <div class="col-md-12">
+	    <div class="quote_2l">
+		  <h6 class="d-inline-block mt-2 mb-0"><a class="button_1" href="#"> Post Comment <i class="fa fa-paper-plane ms-1"></i> </a></h6>
+		</div>
+	   </div>
+     </div>
+	   </div>
+	  </div>
+	</div>
+	<div class="col-md-4">
+      <div class="contact_2r row clearfix neon-card">
+	    <div class="col-md-2">
+		 <div class="contact_2rl clearfix">
+		  <span class="font_50 lh-1"><i class="fa fa-map-marker col_green"></i></span>
+		 </div>
+		</div>
+		<div class="col-md-10">
+		 <div class="contact_2rr clearfix">
+		  <h4 class="mgt">Location</h4>
+		  <hr class="line">
+		  <p>Dubai, U.A.E</p>
+		  <hr>
+		 </div>
+		</div>
+	  </div>
+	  <div class="contact_2r row clearfix">
+	    <div class="col-md-2">
+		 <div class="contact_2rl clearfix">
+		  <span class="font_50 lh-1"><i class="fa fa-phone col_green"></i></span>
+		 </div>
+		</div>
+		<div class="col-md-10">
+		 <div class="contact_2rr clearfix">
+		  <h4 class="mgt">Phone</h4>
+		  <hr class="line">
+		  <p>+971 50 881 9640</p>
+		  <hr>
+		 </div>
+		</div>
+	  </div>
+	  <div class="contact_2r row clearfix">
+	    <div class="col-md-2">
+		 <div class="contact_2rl clearfix">
+		  <span class="font_50 lh-1"><i class="fa fa-envelope col_green"></i></span>
+		 </div>
+		</div>
+		<div class="col-md-10">
+		 <div class="contact_2rr clearfix">
+		  <h4 class="mgt">Email</h4>
+		  <hr class="line">
+		  <p>reviveapp@gmail.com</p>
+		  <hr>
+		 </div>
+		</div>
+	  </div>
+	  <div class="contact_2r row clearfix">
+	    <div class="col-md-2">
+		 <div class="contact_2rl clearfix">
+		  <span class="font_50 lh-1"><i class="fa fa-map col_green"></i></span>
+		 </div>
+		</div>
+		<div class="col-md-10">
+		 <div class="contact_2rr clearfix">
+		  <h4 class="mgt">Find Us</h4>
+		  <hr class="line">
+		  <a href="https://maps.google.com/?q=Dubai,+U.A.E" target="_blank">View on Google Maps</a>
+		  <hr>
+		 </div>
+		</div>
+	  </div>
+    </div>
+   </div>
+  </div>
+ </section>
+ 
+<script>
+VanillaTilt.init(document.querySelectorAll(".neon-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+});
+</script>
+
+<div class="floating-3d-icon" title="Recycle">
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="32" fill="#0a0a23"/>
+    <path d="M32 14L36 22H28L32 14Z" fill="#39ff14"/>
+    <path d="M50 32L42 36V28L50 32Z" fill="#00eaff"/>
+    <path d="M32 50L28 42H36L32 50Z" fill="#a259ff"/>
+    <path d="M14 32L22 28V36L14 32Z" fill="#ff00de"/>
+    <circle cx="32" cy="32" r="18" stroke="#39ff14" stroke-width="2"/>
+  </svg>
+</div>
+
+<style>
+.center_h {
+  box-shadow: 0 0 32px 4px var(--neon-blue), 0 0 64px 8px var(--neon-green);
+  border: 2.5px solid var(--neon-green);
+  animation: neon-border 2.5s linear infinite alternate;
+}
+@keyframes neon-border {
+  0% { box-shadow: 0 0 32px 4px var(--neon-blue), 0 0 64px 8px var(--neon-green); }
+  100% { box-shadow: 0 0 64px 8px var(--neon-green), 0 0 32px 4px var(--neon-blue); }
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+  transition: width 0.3s;
+  border-radius: 2px;
+  margin-top: 2px;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+</style>
+
+<script>
+if (!document.getElementById('particles-js')) {
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js';
+  script.onload = function() {
+    particlesJS('neon-bg', {
+      "particles": {
+        "number": {"value": 40},
+        "color": {"value": ["#39ff14", "#00eaff", "#a259ff"]},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.5},
+        "size": {"value": 4},
+        "move": {"enable": true, "speed": 1.5}
+      },
+      "interactivity": {"events": {"onhover": {"enable": true, "mode": "repulse"}}}
+    });
+  };
+  document.body.appendChild(script);
+}
+</script>
+
+<!-- Add modal for game (hidden by default) -->
+<div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="gameModalLabel"><i class="fa fa-gamepad me-2"></i> Recycling Game</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0" id="game-container" style="height:90vh;overflow:hidden;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Play game modal logic
+const playBtn = document.getElementById('play-game');
+if (playBtn) {
+  playBtn.onclick = function(e) {
+    e.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('gameModal'));
+    modal.show();
+    // TODO: Load/init game in #game-container
+  };
+}
+</script>
+</body>
+</html>

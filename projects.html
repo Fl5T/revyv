@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recycling</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/about.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box sticky-top" id="navbar_sticky">
+  <div class="container-xl">
+    <a class="text-black p-0 navbar-brand fw-bold me-0" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Revive</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex align-items-center ms-auto order-md-2">
+      <button id="theme-toggle" class="btn btn-outline-secondary ms-2" title="Toggle dark/light mode" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <a class="btn btn-outline-success ms-2" id="play-game" title="Play Recycling Game" style="border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;" href="#"><i class="fa fa-gamepad"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mb-0 nav_left ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team.html">Team</a></li>
+            <li><a class="dropdown-item border-0" href="detail.html">Team Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownBlog">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdownPages">
+            <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+            <li><a class="dropdown-item border-0" href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-0 ms-auto mt-1">
+        <li class="nav-item">
+          <a class="nav-link social_link mx-2" href="https://www.instagram.com/arhamrafi234/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link social_link" href="https://www.linkedin.com/in/mohammed-arham-049982302/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="neon-bg"></div>
+
+<section id="center" class="center_h" style="min-height:unset; padding-top:0; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative;">
+  <div class="floating-3d-icon" title="Recycle" style="top: 2rem; right: 2rem; left: auto;">
+    <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="32" fill="#0a0a23"/>
+      <path d="M32 14L36 22H28L32 14Z" fill="#39ff14"/>
+      <path d="M50 32L42 36V28L50 32Z" fill="#00eaff"/>
+      <path d="M32 50L28 42H36L32 50Z" fill="#a259ff"/>
+      <path d="M14 32L22 28V36L14 32Z" fill="#ff00de"/>
+      <circle cx="32" cy="32" r="18" stroke="#39ff14" stroke-width="2"/>
+    </svg>
+  </div>
+  <div style="backdrop-filter: blur(8px); background: rgba(24,28,36,0.7); border-radius: 2rem; padding: 3rem 2.5rem; box-shadow: 0 8px 32px 0 rgba(34, 139, 230, 0.10), 0 1.5px 8px 0 var(--neon-blue); max-width: 600px; width: 100%; text-align: center;">
+    <h1 style="font-size: 3rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: bold; margin-bottom: 1.2rem;">
+      <span class="flying-word">Our</span> <span class="flying-word">Projects</span>
+    </h1>
+    <h2 style="font-size: 2rem; font-family: 'Orbitron', 'Poppins', Arial, sans-serif; font-weight: 600; margin-bottom: 1.5rem; color: var(--neon-green);">
+      <span class="flying-word">Recycle</span> • <span class="flying-word">Innovate</span> • <span class="flying-word">Impact</span>
+    </h2>
+    <p style="font-size: 1.25rem; color: #f3f3f3; margin-bottom: 2.2rem;">
+      Discover our <span class="flying-word">initiatives</span> and <span class="flying-word">community</span> projects for a greener world.
+    </p>
+  </div>
+</section>
+
+<section id="overview" class="p_3">
+ <div class="container-xl">
+  <div class="row overview_1">
+   <div class="col-md-6">
+    <div class="overview_1l neon-card">
+	 <h2>Projects Overview</h2>
+	 <p class="mt-3">Revive is an eco-conscious initiative designed to promote plastic recycling through multiple platforms. The Revive App helps users track their recycling habits, access step-by-step guides, and engage in interactive challenges to reduce plastic waste. The Revive Blog shares insightful articles on sustainability, DIY upcycling projects, and expert tips on responsible waste management. Our initiatives focus on community-driven recycling campaigns, educational workshops, and partnerships with eco-friendly organizations. The Revive Community brings together like-minded individuals who share experiences, pledge to sustainable practices, and support one another in making a lasting impact. Finally, the Revive Website serves as the hub for all these efforts, offering valuable resources, interactive features, and opportunities to get involved in the global fight against plastic pollution.</p>
+	 <h5 class="mb-2"><i class="fa fa-long-arrow-right color_1"></i> Leading towards a brighter future</h5>
+	 <h5 class="mb-2"><i class="fa fa-long-arrow-right color_1"></i> Promoting sustainability</h5>
+	  <h5 class="mb-4"><i class="fa fa-long-arrow-right color_1"></i> Passionate about using technology for good</h5>
+	  <h6 class="mb-0"><a href="team.html" class="button">About Our Team</a></h6>
+	</div>
+   </div>
+   <div class="col-md-6">
+    <div class="overview_1r">
+	  <div class="grid clearfix">
+		  <figure class="effect-jazz mb-0">
+			<a href="projects.html"><img src="img/13.jpg" class="w-100" alt="img25"></a>
+		  </figure>
+	  </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+ 
+ <section id="serv_h" class="p_3 bg-light">
+    <div class="container-xl">
+	  <div class="row serv_h1">
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="projects.html"><img src="img/3.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">Revive App	</a></h5>
+			<p class="mb-0 mt-3">The Revive App is a user-friendly platform designed to help individuals track their recycling habits, learn sustainable practices, and take part in eco-friendly challenges. It offers step-by-step guides, interactive features, and rewards to encourage responsible plastic disposal, making sustainability easier and more engaging for everyone.</p>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="projects.html"><img src="img/4.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">Community Recycling Workshops	</a></h5>
+			<p class="mb-0 mt-3">Revive Community Recycling Workshops bring people together to learn hands-on recycling techniques, upcycling ideas, and sustainable living practices. These workshops educate participants on reducing plastic waste while fostering a shared commitment to environmental responsibility through interactive activities and expert-led sessions.</p>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="projects.html"><img src="img/5.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">School Initiatives		</a></h5>
+			<p class="mb-0 mt-3">The Revive Eco-Friendly School Program empowers students to adopt sustainable habits through recycling drives, interactive lessons, and hands-on eco-projects. Schools can participate in waste reduction challenges, integrate green practices into daily routines, and inspire the next generation to protect the planet.</p>
+		   </div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="row serv_h1 mt-4">
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/9.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">Revolutionizing Recycling	</a></h5>
+			<p class="mb-0 mt-3">Recycling apps are making sustainability more accessible by helping users track waste, locate recycling centers, and learn eco-friendly habits. From scanning barcodes for proper disposal to setting recycling goals, these apps simplify waste management and encourage responsible consumption.</p>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/10.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">Recycling Right	</a></h5>
+			<p class="mb-0 mt-3">Many people recycle with good intentions but often make mistakes that contaminate entire batches of recyclables. Avoid tossing greasy pizza boxes, plastic bags, or non-recyclable items into the bin. Always rinse containers, check local recycling guidelines, and keep different materials sorted properly to ensure your efforts truly make a difference.</p>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="col-md-4">
+	     <div class="serv_h1i neon-card">
+		   <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/11.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		   <div class="serv_h1i1  p-4 bg-white">
+		    <h5><a href="#">A Greener Home		</a></h5>
+			<p class="mb-0 mt-3">– Small changes at home can significantly reduce your environmental impact. Switch to energy-efficient appliances, use reusable bags and bottles, and opt for natural cleaning products. Reduce waste by composting food scraps and recycling properly. Installing water-saving fixtures and using solar energy can also make a big difference in creating a greener, more sustainable home.</p>
+		   </div>
+		 </div>
+	   </div>
+	  </div>
+	</div>
+</section>
+    
+<section id="subs" class="pt-5 pb-5 bg_green">
+    <div class="container-xl">
+	    <div class="row center_h1">
+    <div class="col-md-9">
+	 <div class="center_h1l">
+	   <div class="center_h1li row">
+	    <div class="col-md-6">
+		 <div class="center_h1lil">
+		  <div class="center_h1lili row">
+		   <div class="col-md-2">
+		    <div class="center_h1lilil">
+			  <span class="d-inline-block bg-white col_green rounded-circle text-center fs-3"><i class="fa fa-phone"></i></span>
+			</div>
+		   </div>
+		   <div class="col-md-10">
+		    <div class="center_h1lilir">
+			 <h5 class="text-white">+(971) 050-881-9640 </h5>
+			 <h6 class="mb-0 text-light font_14">Dubai, U.A.E</h6>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+		<div class="col-md-6">
+		 <div class="center_h1lil">
+		  <div class="center_h1lili row">
+		   <div class="col-md-2">
+		    <div class="center_h1lilil">
+			  <span class="d-inline-block bg-white col_green rounded-circle text-center fs-3"><i class="fa fa-clock-o"></i></span>
+			</div>
+		   </div>
+		   <div class="col-md-10">
+		    <div class="center_h1lilir">
+			 <h5 class="text-white">Together for a Cleaner, Greener World.</h5>
+			 <h6 class="mb-0 text-light font_14">Always here for a chat!</h6>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+	   </div>
+	 </div>
+	</div>
+	<div class="col-md-3">
+	 <div class="center_h1r text-end">
+	  <div class="input-group bg-white">
+				<input type="text" class="form-control border-0" placeholder="Email Address">
+				<span class="input-group-btn">
+					<button class="btn btn-primary col_green bg-transparent rounded-0 p-3 px-4 border-0" type="button">
+						<i class="fa fa-pencil"></i> </button>
+				</span>
+		</div>
+	 </div>
+	</div>
+  </div>
+	</div>
+</section>
+
+<section id="gallery">
+    <div class="container-fluid p-0">
+	  <div class="contact_2 row mx-0">
+      <div class="col-md-12 p-0">
+	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115694.8352593671!2d55.1712672!3d25.2048493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4346e8a8b1e1%3A0x8e6e8e8e8e8e8e8e!2sDubai%2C%20UAE!5e0!3m2!1sen!2sae!4v1710000000000!5m2!1sen!2sae" height="400" style="border:0; width:100%;" allowfullscreen=""></iframe>
+	  </div>
+  </div>
+	 <div class="homei row mx-0">
+	     <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/12.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/12.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/13.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/13.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/14.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/14.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/15.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/15.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/16.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/16.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+		 <div class="col-md-2 p-0">
+		  <div class="homei1">
+		   <div class="homei1i position-relative">
+		    <div class="homei1i1">
+			    <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/17.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+			</div>
+			<div class="homei1i2 text-center position-absolute w-100 top-0">
+			  <ul class="mb-0">
+		  <li class="d-inline-block me-1"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-link"></i></a></li>
+		  <li class="d-inline-block"><a data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a></li>
+		 </ul>
+			</div>
+		   </div>
+		  </div>
+		  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title text-black" id="exampleModalLabel">Recycling</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<img src="img/17.jpg" class="w-100" alt="abc">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		 </div>
+	   </div>	
+	</div>
+   </section>
+</section>
+
+<section id="footer" class="p_3">
+    <div class="container-xl">
+       <div class="footer_1 row">
+        <div class="col-md-4">
+         <div class="footer_1i">
+          <h4 class="mb-4"><a class="text-white" href="index.html"><i class="fa fa-recycle me-1 col_green align-middle"></i> Revive: Your Eco Bud</a></h4>
+          <p class="text-white-50">Dedicated to educating and empowering individuals and businesses for a sustainable future through recycling and clean energy.</p>
+          <h6 class="text-light"><i class="fa fa-map-marker col_green me-1"></i> Dubai, UAE</h6>
+          <h6 class="mt-3"><i class="fa fa-phone col_green me-1"></i> <a  class="text-light" href="#">+971 50 881 9640</a></h6>
+          <h6 class="mt-3 mb-0"><i class="fa fa-envelope col_green me-1"></i> <a  class="text-light" href="#">reviveapp@gmail.com</a></h6>
+         </div>
+        </div>
+        <div class="col-md-4">
+         <div class="footer_1i row">
+           <div class="col-md-6"><img src="img/35-3.jpg" class="w-100" alt="Recycling at work"> </div>
+           <div class="col-md-6"><img src="img/35-1.jpg" class="w-100" alt="Eco-friendly community"> </div>
+           <div class="col-md-6"><img src="img/35-2.jpg" class="w-100" alt="Sustainable practices"> </div>
+           <div class="col-md-6"><img src="img/35-4.jpg" class="w-100" alt="Clean energy solutions"> </div>
+         </div>
+        </div>
+        <div class="col-md-4">
+         <div class="footer_1i">
+          <h4 class="mb-4 text-white">Recent News</h4>
+         <p class="text-white-50 mb-2">How Recycling Can Save the Planet: Join the Movement</p>
+         <h6 class="col_green">January 15, 2025</h6>
+          <p class="text-white-50 mb-2 mt-3">Tips for Properly Disposing of E-Waste and Its Impact</p>
+         <h6 class="col_green">January 22, 2025</h6>
+          <p class="text-white-50 mb-2 mt-3">The Future of Clean Energy: Innovations in Sustainability</p>
+         <h6 class="col_green mb-0">January 29, 2025</h6>
+         </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+<section id="footer_b" class="pt-3 pb-3">
+ <div class="container-xl">
+    <div class="row footer_b1">
+     <div class="col-md-12">
+      <div class="footer_b1l text-center">
+        <p class="mb-0">© 2025 Revive: Your Eco Bud. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+      </div>
+     </div>
+    </div>
+ </div>
+</section>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar_sticky = document.getElementById("navbar_sticky");
+var sticky = navbar_sticky.offsetTop;
+var navbar_height = document.querySelector('.navbar').offsetHeight;
+function myFunction() {
+  if (window.pageYOffset >= sticky + navbar_height) {
+    navbar_sticky.classList.add("sticky")
+  document.body.style.paddingTop = navbar_height + 'px';
+  } else {
+    navbar_sticky.classList.remove("sticky");
+  document.body.style.paddingTop = '0'
+  }
+}
+
+VanillaTilt.init(document.querySelectorAll(".neon-card"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+});
+</script>
+
+<div class="floating-3d-icon" title="Recycle">
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="32" fill="#0a0a23"/>
+    <path d="M32 14L36 22H28L32 14Z" fill="#39ff14"/>
+    <path d="M50 32L42 36V28L50 32Z" fill="#00eaff"/>
+    <path d="M32 50L28 42H36L32 50Z" fill="#a259ff"/>
+    <path d="M14 32L22 28V36L14 32Z" fill="#ff00de"/>
+    <circle cx="32" cy="32" r="18" stroke="#39ff14" stroke-width="2"/>
+  </svg>
+</div>
+
+<style>
+.center_h {
+  box-shadow: 0 0 32px 4px var(--neon-blue), 0 0 64px 8px var(--neon-green);
+  border: 2.5px solid var(--neon-green);
+  animation: neon-border 2.5s linear infinite alternate;
+}
+@keyframes neon-border {
+  0% { box-shadow: 0 0 32px 4px var(--neon-blue), 0 0 64px 8px var(--neon-green); }
+  100% { box-shadow: 0 0 64px 8px var(--neon-green), 0 0 32px 4px var(--neon-blue); }
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+  transition: width 0.3s;
+  border-radius: 2px;
+  margin-top: 2px;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+</style>
+
+<script>
+if (!document.getElementById('particles-js')) {
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js';
+  script.onload = function() {
+    particlesJS('neon-bg', {
+      "particles": {
+        "number": {"value": 40},
+        "color": {"value": ["#39ff14", "#00eaff", "#a259ff"]},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.5},
+        "size": {"value": 4},
+        "move": {"enable": true, "speed": 1.5}
+      },
+      "interactivity": {"events": {"onhover": {"enable": true, "mode": "repulse"}}}
+    });
+  };
+  document.body.appendChild(script);
+}
+</script>
+
+<div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="gameModalLabel"><i class="fa fa-gamepad me-2"></i> Recycling Game</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0" id="game-container" style="height:90vh;overflow:hidden;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const playBtn = document.getElementById('play-game');
+if (playBtn) {
+  playBtn.onclick = function(e) {
+    e.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('gameModal'));
+    modal.show();
+    // TODO: Load/init game in #game-container
+  };
+}
+</script>
+
+</body>
+</html>
